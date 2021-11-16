@@ -1,0 +1,201 @@
+
+
+.title {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.score-container {
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+}
+
+.tooltip{
+    color: #cef4ce;
+    padding: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    line-height: 2;
+    font-weight: lighter;
+    background-color: #dedbf1;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: 1px #cef4ce solid;
+    position: absolute;
+    z-index: 1;
+    top: 300px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+.containerOne{
+    background-image: url('../assets/ezgif.com-gif-maker.png');
+    background-repeat: no-repeat;
+    background-position-x: 4%;
+    background-position-y: 27%;
+    background-size: 20%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.score{
+    color: rgb(241, 117, 235);
+    width: 20%;
+    text-align: center;
+    float: right;
+    // margin-top: 50px;
+    padding: 10px;
+}
+.counter {
+    font-size: 5rem;
+    color: white;
+    border: 3px groove white;
+    width: 50%;
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+.commands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 50%;
+    button{
+        cursor: pointer;
+        padding: 15px;
+        width: 50%;
+        background-color: transparent;
+        font-size: 2rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        background: -webkit-linear-gradient(rgb(241, 117, 235), rgb(114, 236, 169));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-border-radius: 7px;
+	
+    }
+    button:hover{
+        -webkit-box-shadow:0px 0px 30px 0px rgb(114, 236, 169);
+        -moz-box-shadow:0px 0px 30px 0px rgb(114, 236, 169);
+        box-shadow:0px 0px 30px 0px rgb(114, 236, 169);
+        font-size: larger;
+    }
+}
+
+.start-reset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    button{
+        padding: 15px;
+        background-color: transparent;
+        color: white;
+    }
+}
+// create variable for buttons
+.startBtn{
+    width: 20%;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: lightgray!important;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray!important;
+    -webkit-border-radius: 7px ;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+}
+.startBtn:active{
+    box-shadow: none;
+	position: relative;
+	top: .2em;
+
+}
+.startBtn:hover{
+    color: rgb(114, 236, 169)!important;
+
+}
+.resetBtn{
+    width: 50%;
+    font-size: 1rem;   
+    border: none;
+}
+.resetBtn:hover{
+    color: rgb(114, 236, 169)!important;
+}
+
+
+@media only screen and (max-width:480px) {
+    .containerOne{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-position-x: 10%;
+      background-position-y: 100%;
+    }
+
+    .title {
+        font-size: 1rem;
+        text-align: center;  
+        margin-bottom: 20px;
+    }
+    .score{
+        font-size: 12px;
+        width: 40%;
+    }
+    .counter {
+        font-size: 3rem;
+        padding: 150px;
+    }
+    .commands{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-content: space-evenly;
+        button{
+            cursor: pointer;
+            padding: 10px;
+            width: 30%;
+            font-size: 0.6rem;
+        }
+    }
+    .start-reset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        button{
+            padding: 15px;
+            background-color: transparent;
+            color: white;
+        }
+    }
+    .startBtn{
+        width: 40%;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .resetBtn{
+        font-size: 12px;   
+    }
+} 

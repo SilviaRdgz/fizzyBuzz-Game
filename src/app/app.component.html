@@ -1,0 +1,44 @@
+<div class="containerOne">
+  <audio id='intro-audio' autoplay>
+    <source src="../assets/Soda fizz.mp3" type="audio/mpeg" >
+  </audio>
+<div class="title">
+  <h1>{{title}}</h1>
+</div>
+<div class="score-container">
+  <div class="score">
+    <h2>Score {{pointService.score}}</h2>
+  </div>
+  <div class="tooltip">
+    <img src="../assets/info_white_24dp.svg" alt='info-icon' width="24px" height="24px"/>
+    <p class="tooltiptext">Is the number divisible by 3? Press <b>'Fizz'</b>!<br>
+      Is it divisible by 5? Press <b>'Buzz'</b>!<br> If divisible by both, press <b>'FizzBuzz'</b>! <br>
+      Exerytime you get it right, it adds 1 point to the score and it does the opposite
+      if you're wrong. </p>
+  </div>
+</div>
+
+  <div class="container">
+      <div class="counter">
+      <span>{{counterService.counter}}</span>   
+    </div>
+    <div class="commands">
+      <button class="fizz" (click)='fizzBtn()'>
+        Fizz
+      </button>
+      <button class="fizzyBuzz" (click)='fizzBuzzBtn()'>
+        FizzyBuzz
+      </button>
+      <button class="buzz" (click)='buzzBtn()'>
+        Buzz
+      </button>
+    </div>
+    </div>
+  <div class="start-reset">
+      <button class="startBtn" (click)='startBtn()' [disabled]="click"> 
+        Start Game
+      </button>
+      <button class="resetBtn" (click)='resetBtn()'>
+        Reset</button>
+  </div>
+</div>
